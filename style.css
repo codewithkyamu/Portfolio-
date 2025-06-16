@@ -18,6 +18,8 @@ body { background:#0f0f0f; color:#fff; line-height:1.6; }
 .bar.js::before { width:85%; }
 .bar.php::before { width:80%; }
 .bar.mysql::before { width:75%; }
+.bar.video::before { width: 85%; }
+
 
 /* Projects */
 .projects-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
