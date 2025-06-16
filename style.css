@@ -1,0 +1,38 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:"Segoe UI",sans-serif; }
+body { background:#0f0f0f; color:#fff; line-height:1.6; }
+
+/* Hero */
+.hero { text-align:center; padding:100px 20px; background:linear-gradient(145deg,#00c6ff,#0072ff); animation:fadeIn 2s ease-out; }
+.hero h1 span { color:#fff700; }
+.btn { background:#fff700; color:#000; padding:10px 20px; border-radius:30px; text-decoration:none; transition:background .3s; }
+.btn:hover { background:#ffd500; }
+
+/* Sections */
+.section { padding:60px 20px; text-align:center; }
+.skills-container { max-width:600px; margin:0 auto; }
+.skill { margin-bottom:20px; text-align:left; }
+.bar { height:20px; border-radius:5px; background:#333; margin-top:5px; overflow:hidden; position:relative; }
+.bar::before { content:''; position:absolute; height:100%; background:#00ff99; animation:grow 2s forwards; }
+.bar.html::before { width:95%; }
+.bar.css::before { width:90%; }
+.bar.js::before { width:85%; }
+.bar.php::before { width:80%; }
+.bar.mysql::before { width:75%; }
+
+/* Projects */
+.projects-container { display:flex; justify-content:center; flex-wrap:wrap; gap:20px; }
+.project-card { background:#1f1f1f; padding:40px; border-radius:10px; transition:transform .3s, background .3s; }
+.project-card:hover { transform:scale(1.05); background:#282828; }
+
+/* Contact */
+form { max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px; }
+input,textarea { padding:10px; border:none; border-radius:5px; outline:none; }
+button { padding:10px; background:#00c6ff; color:#fff; border:none; border-radius:5px; cursor:pointer; }
+button:hover { background:#0072ff; }
+
+/* Footer */
+footer { text-align:center; padding:20px; background:#111; margin-top:50px; }
+
+/* Animations */
+@keyframes fadeIn { from { opacity:0; transform:translateY(-20px);} to {opacity:1;transform:translateY(0);} }
+@keyframes grow { from { width:0;} to { width:100%; } }
